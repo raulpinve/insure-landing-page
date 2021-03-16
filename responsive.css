@@ -1,0 +1,181 @@
+
+@media screen and (min-width: 1440px){
+    
+    /* Wrapper */
+    .wrapper, .wrapper-hero{
+        width: 1110px;
+        margin: auto;
+    }
+
+    /* Header */
+    .header-menu input[type=checkbox]{
+        display: none;
+    }
+    .menu-checkbox-label{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: initial;
+        height: auto;
+        background: none;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+        font-size: .8em;
+    }
+    .menu-item{
+        list-style: none;
+        margin-top: 0;    
+    }
+    .menu-item-link{
+        display: block;
+        width: auto;
+        color: var(--darkGrayishViolet);
+        margin-left: 1em;
+        font-weight: .9em;
+        /* padding: 0; */
+    }
+    .menu-item:last-child > .menu-item-link{
+        border: 2px solid black;
+        color: black;        
+        padding: 1em 2em;
+        margin-left: 1em;
+    }
+    .menu-item:hover > .menu-item-link{
+        color: black;
+    }
+    
+    .menu-item:last-child:hover > .menu-item-link{
+        background: black;
+        color: white;
+    }
+    
+    /* Hero */
+
+    .hero-intro{
+        grid-area: view;
+        background-image: url("images/image-intro-desktop.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 540px;
+        height: 650px;
+        position: absolute;
+        right: 0;
+        bottom: -150px;
+        z-index: 2;
+    }
+    .hero-view-plans{
+        padding: 3.8em 0em;
+        width: 540px;
+        height: auto;
+        text-align: left;
+    }
+    .hero-view-plans:before{
+        content: "";
+        display: block;
+        position: relative;
+        top: -75px;
+        width: 150px;
+        height: 2px;
+        background: white;
+    }
+    .view-plans-title{
+        font-size: 4em;
+        line-height: 1;
+    }
+    .view-plans-text{
+        font-size: 1.02em;
+    }
+    .view-plans-button{
+        margin-top: 3em;
+    }
+    .bg-intro-left{
+        background-image: url("images/bg-pattern-intro-left-desktop.svg");
+        width: 196px;
+        height: 500px;
+        top: initial;
+        bottom: -330px;
+    }
+    .bg-intro-right{
+        background-image: url("images/bg-pattern-intro-right-desktop.svg");
+        background-size: contain;
+        width: 440px;
+        height: 600px;
+        bottom: 85px;
+        right: 0;
+        z-index: 2;
+    }
+    .wrapper-hero{
+        height: 600px;
+        display: flex;
+        padding-top: 7em;
+    }
+    /* Why us */
+    .why-us{
+        margin-top: 15em;
+        text-align: left;
+    }
+    .why-us .wrapper::before{
+        margin: initial;
+    }
+    .why-us-title{
+        font-size: 4em;
+    }
+    .grid-cards-options{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 2em;
+    }
+    .card-option-text{
+        font-size: 1em;
+    }
+
+    /* More about */
+    .more-about{
+        display: grid;
+        grid-template-columns: 477px 200px;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+        padding: 5em;
+        font-size: 1.55em;
+        background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+        background-size: contain;
+    }
+    .more-about .page-buttons{
+        margin-top: 0;
+        padding: 1em 1.5em;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer{
+        background-image: url("images/bg-pattern-footer-desktop.svg");
+        background-repeat: no-repeat;
+        padding: 3.5em 0em;
+        text-align: left;
+    }
+    .footer-logo-social{
+        display: grid;
+        grid-template-columns: 110px 150px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-social{
+        margin-top: 0;
+    }
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-link-item-title{
+        text-align: left;
+    }
+    .footer-link-items{
+        text-align: left;
+    }
+}
